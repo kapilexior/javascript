@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wewnętrzny Arkusz Stylów</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f0f0f0;
+            white-space: pre;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Gdzie jest wstawiany wewnętrzny arkusz stylów?</h1>
+    <p>Wewnętrzny arkusz stylów zawsze wstawia się w sekcji head dokumentu HTML, pomiędzy znacznikami head a /head. Stosuje się go, gdy na stronie występują wielokrotnie te same elementy, którym chcemy nadać jednolite formatowanie (inne niż domyślne).</p>
+    
+   <h1>2. Składnia teoretyczna</h1>
+    <div class="box">
+        &lt;head&gt;
+        <br> &nbsp; &nbsp; &lt;style type="text/css"&gt;
+        <br> &nbsp; &nbsp; &nbsp; &nbsp; /* <![CDATA[ */
+        <br> &nbsp; &nbsp; &nbsp; &nbsp; selektor1 { cecha: wartość; cecha2: wartość2; }
+        <br> &nbsp; &nbsp; &nbsp; &nbsp; selektor2 { cecha: wartość; cecha2: wartość2; }
+        <br> &nbsp; &nbsp; &nbsp; &nbsp; /* ]]> */
+        <br> &nbsp; &nbsp; &lt;/style&gt;
+        <br> &lt;/head&gt;
+    </div>    
+    <h1>3. Jakie mogą być selektory?</h1>
+    <p>Selektorem może być dowolny znacznik HTML, np.:</p>
+    <ul>
+        <li>p – akapit</li>
+        <li>h1 – nagłówek</li>
+        <li>td – komórka tabeli</li>
+        <li>div – kontener blokowy</li>
+        <li>span – kontener liniowy</li>
+        <li>a – link</li>
+        <li>img – obrazek</li>
+    </ul>
+    
+    <h1>4. Jakie mogą być cechy i wartości?</h1>
+    <p>Cechą w deklaracji stylu jest konkretna właściwość formatowania, np.:</p>
+    <ul>
+        <li>color – kolor tekstu</li>
+        <li>font-size – rozmiar czcionki</li>
+        <li>background-color – kolor tła</li>
+        <li>margin – marginesy</li>
+        <li>padding – wewnętrzne odstępy</li>
+    </ul>
+    <p>Wartością jest konkretna wartość atrybutu, np.:</p>
+    <ul>
+        <li>red – kolor czerwony</li>
+        <li>16px – rozmiar czcionki w pikselach</li>
+        <li>#ff0000 – kod koloru czerwonego</li>
+        <li>10px – margines 10 pikseli</li>
+    </ul>
+    <p>Jednemu selektorowi można przypisać wiele cech, które oddziela się średnikami.</p>
+    <div class="box">
+        p {
+            color: blue;
+            font-size: 18px;
+            background-color: yellow;
+        }
+    </div>
+</body>
+</html>

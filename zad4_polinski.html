@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pięć sposobów stylów</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="bold">
+            <span class="underline">1) Zewnętrzny</span> arkusz stylów:
+        </div>
+        <textarea readonly>
+&lt;head&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;
+&lt;/head&gt;
+        </textarea>
+    </div>
+
+    <div class="box">
+        <div class="bold">
+            <span class="underline">2) Lokalny</span> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli dopisanie arkusza do wybranego bloku treści strony.
+        </div>
+        <textarea readonly>
+&lt;selektor style="cecha1: wartość1; cecha2: wartość2..."&gt;...&lt;/selektor&gt;
+        </textarea>
+    </div>
+
+    <div class="box">
+        <div class="bold">
+            <span class="underline">3) Wewnętrzny</span> arkusz stylów:
+        </div>
+        <textarea readonly>
+&lt;head&gt;
+    &lt;style type="text/css"&gt;
+        selektor1 { cecha: wartość; cecha2: wartość2... }
+        selektor2 { cecha: wartość; cecha2: wartość2... }
+    &lt;/style&gt;
+&lt;/head&gt;
+        </textarea>
+    </div>
+
+    <div class="box">
+        <div class="bold">
+            <span class="underline">4) Alternatywny</span> arkusz stylów:
+        </div>
+        <textarea readonly>
+&lt;head&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&gt;
+    &lt;link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;
+    &lt;link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&gt;
+&lt;/head&gt;
+        </textarea>
+    </div>
+
+    <div class="box">
+        <div class="bold">
+            <span class="underline">5) Import</span> arkusza stylów:
+        </div>
+        <textarea readonly>
+&lt;style type="text/css"&gt;
+    @import url(adres zewnętrznego arkusza stylów);
+&lt;/style&gt;
+        </textarea>
+    </div>
+
+</body>
+</html>

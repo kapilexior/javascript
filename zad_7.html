@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styl Lokalny w CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f0f0f0;
+        }
+        code {
+            background-color: #e0e0e0;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu lokalnego?</h1>
+    <p>Styl lokalny pozwala na nadanie stylu tylko konkretnemu elementowi HTML za pomocą atrybutu "style" wewnątrz znacznika. Formatowany będzie wyłącznie ten element, w którym zastosowano styl lokalny.</p>
+    
+    <h1>2. Składnia teoretyczna</h1>
+    <div class="box">
+        &lt;element style="cecha: wartość;"&gt;Treść&lt;/element&gt;
+    </div>
+        
+    <h1>3. Co może być selektorem?</h1>
+    <p>Selektorem w CSS może być:</p>
+    <ul>
+        <li>Nazwa znacznika HTML </li>
+        <li>Identyfikator </li>
+        <li>Klasa </li>
+        <li>Atrybut </li>
+        <li>Pseudoklasa </li>
+        <li>Pseudoelement </li>
+    </ul>
+    
+    <h1>4. Co wpisujemy jako "cechę"? Jakie jest znaczenie średników?</h1>
+    <p>Jako "cechę" wpisujemy właściwość CSS, którą chcemy zmienić, np. color, font-size, background-color.</p>
+    <p>Średniki (;) oddzielają poszczególne deklaracje stylu w jednej instrukcji CSS, co pozwala na stosowanie wielu stylów jednocześnie.</p>
+       
+    <h1>5. Co wpisujemy jako "wartość" (w deklaracji stylu)?</h1>
+    <p>Jako "wartość" wpisujemy konkretną wartość dla danej cechy, np.:</p>
+    <div class="box">
+        color: red;<br>
+        font-size: 16px;<br>
+        background-color: yellow;
+    </div>
+    <p>Wartości mogą być wyrażone jako:</p>
+    <ul>
+        <li>Nazwy </li>
+        <li>Jednostki </li>
+        <li>Kody kolorów </li>
+    </ul>
+</body>
+</html>

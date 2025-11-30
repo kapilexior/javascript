@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odpowiedzi na pytania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f0f0f0;
+            white-space: pre;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>1. Składnia teoretyczna</h1>
+    <p>Składnia teoretyczna stylu zewnętrznego:</p>
+    <div class="box">
+        &lt;head&gt;<br>
+        &nbsp;&nbsp;&lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;<br>
+        &lt;/head&gt;
+    </div>
+
+    <h1>2. Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować w dokumencie?</h1>
+    <p>Styl zewnętrzny wstawiany jest w sekcji &lt;head&gt;. Znacznik &lt;link rel="Stylesheet" /&gt; jest odpowiedzialny za podłączenie stylu. Może on występować wielokrotnie w dokumencie.</p>
+
+    <h1>3. Jak wygląda najprostsza forma wstawiania stylu zewnętrznego?</h1>
+    <p>Najprostsza forma wstawiania stylu zewnętrznego:</p>
+    <div class="box">
+        &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;
+    </div>
+
+    <h1>4. Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasada musi być zachowana przy większej ilości dołączanych styli?</h1>
+    <p>Do jednego dokumentu HTML można dołączyć dowolną liczbę arkuszy styli. Zasada, którą należy zachować, to że ważniejsze będą deklaracje z arkusza, który został dołączony później.</p>
+
+    <h1>5. Co się dzieje w przypadku konfliktów?</h1>
+    <p>W przypadku konfliktów, gdzie te same style są definiowane w różnych arkuszach styli, ważniejsze będą deklaracje z arkusza, który został podłączony później.</p>
+
+    <h1>6. Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h1>
+    <p>Pliki arkuszy styli są zwykłymi plikami tekstowymi, które można tworzyć i edytować w dowolnym edytorze tekstowym, np. Notatnik, Visual Studio Code.</p>
+
+    <h1>7. Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1>
+    <p>Można używać specjalnych edytorów CSS, które oferują podpowiedzi składniowe i lepszą organizację kodu, np. Adobe Dreamweaver.</p>
+
+    <h1>8. Jakie rozszerzenie posiada plik będący zewnętrznym arkuszem styli?</h1>
+    <p>Plik zewnętrznego arkusza styli ma rozszerzenie .css.</p>
+
+    <h1>9. Jakie są zalety zewnętrznego arkusza styli?</h1>
+    <ul>
+        <li>Wszystkie strony w serwisie mogą mieć wspólne cechy wizualne.</li>
+        <li>Zmiana wyglądu całego serwisu przez edycję jednego pliku CSS zamiast każdej strony osobno.</li>
+    </ul>
+
+    <h1>10. Uwagi na temat pisania w CSS</h1>
+    <ul>
+        <li>Znacznik &lt;link&gt; może znajdować się wyłącznie w sekcji &lt;head&gt;.</li>
+        <li>Każdy arkusz styli powinien mieć rozszerzenie .css.</li>
+        <li>W przypadku konfliktów ważniejszy jest arkusz dołączony później.</li>
+        <li>Można używać specjalnych edytorów CSS dla lepszej organizacji kodu.</li>
+    </ul>
+
+</body>
+</html>

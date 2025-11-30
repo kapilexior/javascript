@@ -1,0 +1,25 @@
+
+<html>
+ <body>
+ <div style="color:green;font-size:38px;">
+ <script language="JavaScript">
+ var D1_pol=prompt("Data1=","");
+ var G1_pol=prompt("Godzina1=","");
+ var D2_pol=prompt("Data2=","");
+ var G2_pol=prompt("Godzina2=","");
+ var sekund;
+ var a=parseFloat(D1_pol);
+ var b=parseFloat(D2_pol);
+ var g1=parseFloat(G1_pol);
+ var g2=parseFloat(G2_pol);
+ sekund=((a*24+g1)-(b*24+g2))*3600;
+ document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+ function okno_zamknij_polinski()
+ {
+ window.close()
+ }
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_polinski()"/>
+ </body>
+ </html>

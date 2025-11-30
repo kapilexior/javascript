@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Określanie kolorów w CSS</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: 30px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      vertical-align: top;
+  
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td>
+        a) określanie z użyciem definicji heksadecymalnych<br>
+        DIV  {color:#FFFFFF;}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        b) określanie z użyciem definicji RGB <br>
+        <span class="example">DIV {color: rgb(255,100,13);}</span>
+        <div class="description">liczby od 0 do 255 dla kolorów czerwony,zielony, niebieski,</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        c) określanie z użyciem nazwy kolorów <br>
+        <span class="example">DIV {color:red;}</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        d) określanie z użyciem definicji RGB oraz nasycenia kolorów <br>
+        DIV {color: rgb(10%,40%,78%);}
+        &nbsp &nbsp procentowe nasycenie obrazu od 0% do 100%
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+<html>
+ <body>
+ <div style="color:green;font-size:50px;">
+ <script language="JavaScript">
+// Jakub Poliński 3K 11.10.2025
+// Zadanie 11
+ var D1_ski=prompt("Data1=","");
+ var D2_ski=prompt("Data2=","");
+ var sekund;
+ var a=parseFloat(D1_ski);
+ var b=parseFloat(D2_ski);
+ sekund=(a-b)*24*60*60;
+ document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+ function okno_zamknij_poliński()
+ {
+ window.close()
+ }
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_poliński()"/>
+ </body>
+ </html>

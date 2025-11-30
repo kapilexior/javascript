@@ -1,0 +1,74 @@
+
+<html>
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<script type="text/javascript">
+
+
+ function AB_pol()
+ {
+var xa_pol= parseFloat(document.getElementById('xa_pol').value);
+var xb_pol= parseFloat(document.getElementById('xb_pol').value);
+var ya_pol= parseFloat(document.getElementById('ya_pol').value);
+var yb_pol= parseFloat(document.getElementById('yb_pol').value);
+
+ var x= xa_pol - xb_pol;
+ var y= ya_pol - yb_pol;
+ var x_kwadrat= Math.pow(x,2);
+ var y_kwadrat= Math.pow(y,2);
+ var suma_kw= x_kwadrat + y_kwadrat;
+ var pierwiastek=Math.sqrt(suma_kw);
+document.getElementById("nazwa").innerHTML ="pole AB= "+pierwiastek+" cm"
+}
+ 
+function AC_pol()
+ {
+var xa_pol= parseFloat(document.getElementById('xa_pol').value);
+var xc_pol= parseFloat(document.getElementById('xc_pol').value);
+var ya_pol= parseFloat(document.getElementById('ya_pol').value);
+var yc_pol= parseFloat(document.getElementById('yc_pol').value);
+
+ var x= xa_pol - xc_pol;
+ var y= ya_pol - yc_pol;
+ var x_kwadrat= Math.pow(x,2);
+ var y_kwadrat= Math.pow(y,2);
+ var suma_kw= x_kwadrat + y_kwadrat;
+ var pierwiastek=Math.sqrt(suma_kw);
+document.getElementById("nazwa").innerHTML ="pole AC= "+pierwiastek+" cm"
+}
+
+function BC_pol()
+ {
+var xb_pol= parseFloat(document.getElementById('xb_pol').value);
+var xc_pol= parseFloat(document.getElementById('xc_pol').value);
+var yb_pol= parseFloat(document.getElementById('yb_pol').value);
+var yc_pol= parseFloat(document.getElementById('yc_pol').value);
+
+ var x= xb_pol - xc_pol;
+ var y= yb_pol - yc_pol;
+ var x_kwadrat= Math.pow(x,2);
+ var y_kwadrat= Math.pow(y,2);
+ var suma_kw= x_kwadrat + y_kwadrat;
+ var pierwiastek=Math.sqrt(suma_kw);
+document.getElementById("nazwa").innerHTML ="pole BC= "+pierwiastek+" cm"
+}
+
+
+ 
+</script>
+ 
+ Podaj długość boku xa: <input type="text" id="xa_pol"> cm &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Podaj długość boku ya: <input type="text" id="ya_pol" > cm<br><br><br>
+Podaj długość boku xb: <input type="text" id="xb_pol" > cm&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Podaj długość boku yb: <input type="text" id="yb_pol" > cm<br><br><br>
+Podaj długość boku xc: <input type="text" id="xc_pol" > cm&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Podaj długość boku yc: <input type="text" id="yc_pol" > cm<br><br><br>
+ <input type="button" name="AB" value="Długość AB" Onclick="AB_pol()"><br><br>
+<input type="button" name="AC" value="Długość AC" Onclick="AC_pol()"><br><br>
+<input type="button" name="BC" value="Długość BC" Onclick="BC_pol()"><br><br>
+ <div style="color:red;font-size:50px;"id="nazwa"></div>
+</body>
+</html>
